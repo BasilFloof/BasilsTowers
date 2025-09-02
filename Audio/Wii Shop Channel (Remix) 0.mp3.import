@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba5xbfqbcpult"
+path="res://.godot/imported/Wii Shop Channel (Remix) 0.mp3-29b0e5bd116b9dd1d5c92941ebf4e1d8.mp3str"
+
+[deps]
+
+source_file="res://Audio/Wii Shop Channel (Remix) 0.mp3"
+dest_files=["res://.godot/imported/Wii Shop Channel (Remix) 0.mp3-29b0e5bd116b9dd1d5c92941ebf4e1d8.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

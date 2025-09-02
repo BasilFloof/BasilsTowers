@@ -1,0 +1,190 @@
+[gd_scene load_steps=8 format=3 uid="uid://crh6j6kyqndfg"]
+
+[ext_resource type="Script" uid="uid://b3v4xqutrf35h" path="res://area_select.gd" id="1_hwbtt"]
+[ext_resource type="Texture2D" uid="uid://cq0gbvmrdbixu" path="res://transparent-white-circle-hi.png" id="2_22gj8"]
+[ext_resource type="AudioStream" uid="uid://b0fpttmv4cmw" path="res://Audio/Jump King GotB OST - 07   Dreeg's Theme DJ Gregorius Remix 0.mp3" id="3_4f0en"]
+[ext_resource type="Theme" uid="uid://cat7hux1b40qc" path="res://area_select.tres" id="3_ode3f"]
+[ext_resource type="StyleBox" uid="uid://dst7ujnledg5m" path="res://mainasstyle2.tres" id="4_exg17"]
+[ext_resource type="AudioStream" uid="uid://quldpr465g5f" path="res://Audio/woosh.mp3" id="4_nhawi"]
+[ext_resource type="AudioStream" uid="uid://bwkb13ea5xcg6" path="res://Audio/hurt_c_08-102842.mp3" id="7_xq3hq"]
+
+[node name="AreaSelect" type="Node2D"]
+script = ExtResource("1_hwbtt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -1096.0
+offset_top = -608.0
+offset_right = 1160.0
+offset_bottom = 608.0
+color = Color(0.254902, 0.682353, 0.835294, 1)
+
+[node name="Region1" type="Node2D" parent="."]
+
+[node name="island" type="Node2D" parent="Region1"]
+position = Vector2(152, 8)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Region1/island"]
+offset_left = -960.0
+offset_top = -16.0
+offset_right = -552.0
+offset_bottom = -8.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Region1/island"]
+offset_left = -960.0
+offset_top = -8.0
+offset_right = -552.0
+offset_bottom = 8.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Region1/island"]
+offset_left = -944.0
+offset_top = 8.0
+offset_right = -568.0
+offset_bottom = 32.0
+color = Color(0.577357, 0.32751, 0.174427, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Region1/island"]
+offset_left = -928.0
+offset_top = 32.0
+offset_right = -584.0
+offset_bottom = 64.0
+color = Color(0.551521, 0.311239, 0.163832, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Region1/island"]
+offset_left = -912.0
+offset_top = 64.0
+offset_right = -600.0
+offset_bottom = 80.0
+color = Color(0.520581, 0.291945, 0.151506, 1)
+
+[node name="Cloud" type="Node2D" parent="Region1"]
+position = Vector2(5432, -1680)
+metadata/_edit_group_ = true
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Region1/Cloud"]
+position = Vector2(-5352, 1276)
+scale = Vector2(0.32, 0.174497)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi3" type="Sprite2D" parent="Region1/Cloud"]
+position = Vector2(-5164, 1288)
+scale = Vector2(0.333333, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi4" type="Sprite2D" parent="Region1/Cloud"]
+position = Vector2(-5286, 1280)
+scale = Vector2(0.233333, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi2" type="Sprite2D" parent="Region1/Cloud"]
+position = Vector2(-5264, 1224)
+scale = Vector2(0.32, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Cloud2" type="Node2D" parent="Region1"]
+position = Vector2(4632, -904)
+metadata/_edit_group_ = true
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Region1/Cloud2"]
+position = Vector2(-5384, 1276)
+scale = Vector2(0.213333, 0.174497)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi3" type="Sprite2D" parent="Region1/Cloud2"]
+position = Vector2(-5298, 1248)
+scale = Vector2(0.3, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi4" type="Sprite2D" parent="Region1/Cloud2"]
+position = Vector2(-5233, 1272)
+scale = Vector2(0.27, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi5" type="Sprite2D" parent="Region1/Cloud2"]
+position = Vector2(-5160, 1224)
+scale = Vector2(0.27, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi2" type="Sprite2D" parent="Region1/Cloud2"]
+position = Vector2(-5308, 1308)
+scale = Vector2(0.28, 0.201342)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi6" type="Sprite2D" parent="Region1/Cloud2"]
+position = Vector2(-5114, 1290)
+scale = Vector2(0.22, 0.154362)
+texture = ExtResource("2_22gj8")
+
+[node name="MainCam" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="MainCam"]
+
+[node name="Left" type="Polygon2D" parent="MainCam/CanvasLayer"]
+position = Vector2(1472, 832)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-8, 8, -8, 120, -64, 64)
+
+[node name="Polygon2D" type="Polygon2D" parent="MainCam/CanvasLayer/Left"]
+color = Color(0.211023, 0.216653, 0.484705, 1)
+polygon = PackedVector2Array(-16, 24, -16, 64, -16, 104, -56, 64)
+
+[node name="Play" type="Panel" parent="MainCam/CanvasLayer"]
+offset_left = 1472.0
+offset_top = 832.0
+offset_right = 1728.0
+offset_bottom = 960.0
+theme = ExtResource("3_ode3f")
+
+[node name="Right" type="Polygon2D" parent="MainCam/CanvasLayer"]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(1736, 840, 1736, 952, 1792, 896)
+
+[node name="Polygon2D" type="Polygon2D" parent="MainCam/CanvasLayer/Right"]
+color = Color(0.211765, 0.215686, 0.486275, 1)
+polygon = PackedVector2Array(1784, 896, 1744, 856, 1744, 936)
+
+[node name="AreaName" type="Panel" parent="MainCam/CanvasLayer"]
+offset_right = 456.0
+offset_bottom = 200.0
+theme = ExtResource("3_ode3f")
+theme_override_styles/panel = ExtResource("4_exg17")
+
+[node name="Label" type="Label" parent="MainCam/CanvasLayer/AreaName"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 448.0
+offset_bottom = 192.0
+theme = ExtResource("3_ode3f")
+text = "Region"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_4f0en")
+autoplay = true
+
+[node name="Woosh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_nhawi")
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="1" type="Node2D" parent="Markers"]
+
+[node name="2" type="Node2D" parent="Markers"]
+position = Vector2(1920, 0)
+
+[node name="No" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_xq3hq")
+
+[node name="Text" type="Node2D" parent="."]
+
+[node name="R1Name" type="Label" parent="Text"]
+offset_left = -2240.0
+offset_top = 576.0
+offset_right = -2112.0
+offset_bottom = 640.0
+text = "Region 1"

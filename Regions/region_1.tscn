@@ -1,0 +1,954 @@
+[gd_scene load_steps=34 format=3 uid="uid://dffoo3yat4c6h"]
+
+[ext_resource type="Script" uid="uid://bwi8uio683esw" path="res://region_1.gd" id="1_rmir3"]
+[ext_resource type="Script" uid="uid://b0a1d5uypops4" path="res://r1gen.gd" id="2_ijm1c"]
+[ext_resource type="AudioStream" uid="uid://ba5xbfqbcpult" path="res://Audio/Wii Shop Channel (Remix) 0.mp3" id="3_fyflm"]
+[ext_resource type="Script" uid="uid://dlc6hu02yvk7o" path="res://f2.gd" id="4_xq5vm"]
+[ext_resource type="AudioStream" uid="uid://dl7wpluwlsxe5" path="res://Audio/Jump King GotB OST - 08   Antumbra.mp3" id="5_hknfi"]
+[ext_resource type="Script" uid="uid://dqyk0knvbdhhm" path="res://f6.gd" id="6_ijm1c"]
+[ext_resource type="AudioStream" uid="uid://bwrpt75ajcpnr" path="res://Audio/Terraria Music - Corruption 0.mp3" id="7_42s3h"]
+[ext_resource type="Texture2D" uid="uid://cq0gbvmrdbixu" path="res://Images/transparent-white-circle-hi.png" id="8_54j5t"]
+[ext_resource type="PackedScene" uid="uid://dcqgmv1r58w2r" path="res://kb.tscn" id="9_wpey2"]
+[ext_resource type="Theme" uid="uid://bkfrnw4mwkuj0" path="res://SignTheme.tres" id="10_ioyr0"]
+[ext_resource type="Theme" uid="uid://b2ogxvl6im1iq" path="res://TowerNameTheme.tres" id="11_oe1fn"]
+[ext_resource type="Theme" uid="uid://ca4vhinf1v258" path="res://IndicatorTheme.tres" id="12_8wp5a"]
+[ext_resource type="PackedScene" uid="uid://dg0v8j8vrcf1b" path="res://player.tscn" id="14_n4f0t"]
+[ext_resource type="PackedScene" uid="uid://daqiblkjii2fg" path="res://Towers/Tower_of_Enjoyable_Tutorials.tscn" id="15_fyflm"]
+[ext_resource type="PackedScene" uid="uid://cfdbbig7g65wq" path="res://Towers/test_tower.tscn" id="15_ijm1c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38et7"]
+size = Vector2(6904, 4752)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7ax5"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sxacm"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ptq8"]
+size = Vector2(128, 64)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lowby"]
+radius = 31.9062
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbhdq"]
+size = Vector2(64.5, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_go6ll"]
+size = Vector2(20392, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gojnm"]
+size = Vector2(1792, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1c2mv"]
+size = Vector2(64, 960)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7g2b"]
+size = Vector2(64, 960)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58smv"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a25ih"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rmf6y"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mebjf"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lowby"]
+size = Vector2(2432, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fdayk"]
+size = Vector2(64, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1ha1"]
+size = Vector2(64, 256)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cy5ms"]
+size = Vector2(96, 128)
+
+[node name="Region1" type="Node2D"]
+script = ExtResource("1_rmir3")
+
+[node name="Music" type="Node2D" parent="."]
+
+[node name="General" type="Area2D" parent="Music"]
+script = ExtResource("2_ijm1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/General"]
+position = Vector2(-3980, 1008)
+shape = SubResource("RectangleShape2D_38et7")
+
+[node name="GenMusic" type="AudioStreamPlayer" parent="Music/General"]
+stream = ExtResource("3_fyflm")
+volume_db = -5.0
+
+[node name="TTF2" type="Area2D" parent="Music"]
+script = ExtResource("4_xq5vm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/TTF2"]
+position = Vector2(960, -512)
+shape = SubResource("RectangleShape2D_b7ax5")
+
+[node name="F2Music" type="AudioStreamPlayer" parent="Music/TTF2"]
+stream = ExtResource("5_hknfi")
+
+[node name="TTF3" type="Area2D" parent="Music"]
+script = ExtResource("6_ijm1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/TTF3"]
+position = Vector2(960, -1536)
+shape = SubResource("RectangleShape2D_sxacm")
+
+[node name="F3Music" type="AudioStreamPlayer" parent="Music/TTF3"]
+stream = ExtResource("7_42s3h")
+
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="BG" type="ColorRect" parent="Backgrounds"]
+offset_left = -22632.0
+offset_top = -8648.0
+offset_right = 9768.0
+offset_bottom = 5200.0
+color = Color(0.253542, 0.681314, 0.834811, 1)
+
+[node name="F1BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_right = 1856.0
+offset_bottom = 1024.0
+color = Color(0.796243, 0.796243, 0.796243, 1)
+
+[node name="F2BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -1024.0
+offset_right = 1856.0
+color = Color(0.533037, 0.533037, 0.533037, 1)
+
+[node name="F3BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -2048.0
+offset_right = 1856.0
+offset_bottom = -1024.0
+color = Color(0.458405, 0.458405, 0.458405, 1)
+
+[node name="Cloud" type="Node2D" parent="Backgrounds"]
+position = Vector2(1864, -952)
+metadata/_edit_group_ = true
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Backgrounds/Cloud"]
+position = Vector2(-5352, 1276)
+scale = Vector2(0.32, 0.174497)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi3" type="Sprite2D" parent="Backgrounds/Cloud"]
+position = Vector2(-5164, 1288)
+scale = Vector2(0.333333, 0.241611)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi4" type="Sprite2D" parent="Backgrounds/Cloud"]
+position = Vector2(-5286, 1280)
+scale = Vector2(0.233333, 0.241611)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi2" type="Sprite2D" parent="Backgrounds/Cloud"]
+position = Vector2(-5264, 1224)
+scale = Vector2(0.32, 0.241611)
+texture = ExtResource("8_54j5t")
+
+[node name="Cloud11" type="Node2D" parent="Backgrounds"]
+position = Vector2(-224, -1128)
+metadata/_edit_group_ = true
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Backgrounds/Cloud11"]
+position = Vector2(-5384, 1276)
+scale = Vector2(0.213333, 0.174497)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi3" type="Sprite2D" parent="Backgrounds/Cloud11"]
+position = Vector2(-5298, 1248)
+scale = Vector2(0.3, 0.241611)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi4" type="Sprite2D" parent="Backgrounds/Cloud11"]
+position = Vector2(-5233, 1272)
+scale = Vector2(0.27, 0.241611)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi5" type="Sprite2D" parent="Backgrounds/Cloud11"]
+position = Vector2(-5160, 1224)
+scale = Vector2(0.27, 0.241611)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi2" type="Sprite2D" parent="Backgrounds/Cloud11"]
+position = Vector2(-5308, 1308)
+scale = Vector2(0.28, 0.201342)
+texture = ExtResource("8_54j5t")
+
+[node name="Transparent-white-circle-hi6" type="Sprite2D" parent="Backgrounds/Cloud11"]
+position = Vector2(-5114, 1290)
+scale = Vector2(0.22, 0.154362)
+texture = ExtResource("8_54j5t")
+
+[node name="Level" type="Node2D" parent="."]
+top_level = true
+
+[node name="Block" type="StaticBody2D" parent="Level"]
+position = Vector2(-448, 96)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Block"]
+position = Vector2(320, 832)
+shape = SubResource("RectangleShape2D_4ptq8")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Block"]
+offset_left = 256.0
+offset_top = 800.0
+offset_right = 384.0
+offset_bottom = 864.0
+
+[node name="Circle" type="StaticBody2D" parent="Level"]
+position = Vector2(-936, 448)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Circle"]
+position = Vector2(776, 416)
+rotation = 0.523599
+shape = SubResource("CircleShape2D_lowby")
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Level/Circle"]
+position = Vector2(776, 416)
+scale = Vector2(0.106667, 0.107382)
+texture = ExtResource("8_54j5t")
+
+[node name="KB" parent="Level" instance=ExtResource("9_wpey2")]
+position = Vector2(152, 840)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/KB"]
+position = Vector2(-248.25, 48)
+shape = SubResource("RectangleShape2D_gbhdq")
+
+[node name="ColorRect" type="ColorRect" parent="Level/KB"]
+offset_left = -280.0
+offset_top = 40.0
+offset_right = -216.0
+offset_bottom = 56.0
+color = Color(0.678944, 0.678944, 0.678944, 1)
+
+[node name="BoundKB" parent="Level" instance=ExtResource("9_wpey2")]
+position = Vector2(-3752, 2696)
+damage = 100
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/BoundKB"]
+position = Vector2(-7980, 48)
+shape = SubResource("RectangleShape2D_go6ll")
+
+[node name="Frame" type="Node2D" parent="Level"]
+
+[node name="1f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, 432)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/1f"]
+position = Vector2(960, 560)
+shape = SubResource("RectangleShape2D_gojnm")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/1f"]
+offset_left = 64.0
+offset_top = 528.0
+offset_right = 1856.0
+offset_bottom = 592.0
+
+[node name="1f2" type="StaticBody2D" parent="Level/Frame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/1f2"]
+position = Vector2(96, 480)
+shape = SubResource("RectangleShape2D_1c2mv")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/1f2"]
+offset_left = 64.0
+offset_right = 128.0
+offset_bottom = 960.0
+
+[node name="1f3" type="StaticBody2D" parent="Level/Frame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/1f3"]
+position = Vector2(1824, 480)
+shape = SubResource("RectangleShape2D_f7g2b")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/1f3"]
+offset_left = 1792.0
+offset_right = 1856.0
+offset_bottom = 960.0
+
+[node name="2f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/2f"]
+position = Vector2(96, -392)
+shape = SubResource("RectangleShape2D_58smv")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/2f"]
+offset_left = 64.0
+offset_top = -904.0
+offset_right = 128.0
+offset_bottom = 120.0
+color = Color(0.641934, 0.641934, 0.641934, 1)
+
+[node name="2f2" type="StaticBody2D" parent="Level/Frame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/2f2"]
+position = Vector2(1824, -512)
+shape = SubResource("RectangleShape2D_a25ih")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/2f2"]
+offset_left = 1792.0
+offset_top = -1024.0
+offset_right = 1856.0
+color = Color(0.641934, 0.641934, 0.641934, 1)
+
+[node name="3f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/3f"]
+position = Vector2(96, -1416)
+shape = SubResource("RectangleShape2D_rmf6y")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/3f"]
+offset_left = 64.0
+offset_top = -1928.0
+offset_right = 128.0
+offset_bottom = -904.0
+color = Color(0.548963, 0.548963, 0.548963, 1)
+
+[node name="3f2" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/3f2"]
+position = Vector2(1824, -1416)
+shape = SubResource("RectangleShape2D_mebjf")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/3f2"]
+offset_left = 1792.0
+offset_top = -1928.0
+offset_right = 1856.0
+offset_bottom = -904.0
+color = Color(0.548963, 0.548963, 0.548963, 1)
+
+[node name="DecoLobby" type="Node2D" parent="."]
+
+[node name="Island" type="StaticBody2D" parent="DecoLobby"]
+position = Vector2(-4960, -192)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecoLobby/Island"]
+position = Vector2(960, 1052)
+shape = SubResource("RectangleShape2D_lowby")
+
+[node name="ColorRect" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = -256.0
+offset_top = 1024.0
+offset_right = 2176.0
+offset_bottom = 1048.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = -256.0
+offset_top = 1048.0
+offset_right = 2176.0
+offset_bottom = 1112.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = -128.0
+offset_top = 1112.0
+offset_right = 2048.0
+offset_bottom = 1200.0
+color = Color(0.577357, 0.32751, 0.174427, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = 64.0
+offset_top = 1200.0
+offset_right = 1856.0
+offset_bottom = 1304.0
+color = Color(0.551521, 0.311239, 0.163832, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = 448.0
+offset_top = 1304.0
+offset_right = 1472.0
+offset_bottom = 1384.0
+color = Color(0.520581, 0.291945, 0.151506, 1)
+
+[node name="Island2" type="StaticBody2D" parent="DecoLobby"]
+position = Vector2(-4576, -192)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecoLobby/Island2"]
+position = Vector2(1536, 960)
+shape = SubResource("RectangleShape2D_fdayk")
+
+[node name="ColorRect" type="ColorRect" parent="DecoLobby/Island2"]
+offset_left = 1504.0
+offset_top = 896.0
+offset_right = 1568.0
+offset_bottom = 1024.0
+color = Color(0.670588, 0.670588, 0.670588, 1)
+
+[node name="Island3" type="StaticBody2D" parent="DecoLobby"]
+position = Vector2(-4384, -192)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecoLobby/Island3"]
+position = Vector2(1536, 896)
+shape = SubResource("RectangleShape2D_u1ha1")
+
+[node name="ColorRect" type="ColorRect" parent="DecoLobby/Island3"]
+offset_left = 1504.0
+offset_top = 768.0
+offset_right = 1568.0
+offset_bottom = 1024.0
+color = Color(0.670588, 0.670588, 0.670588, 1)
+
+[node name="Sign" type="Node2D" parent="DecoLobby"]
+position = Vector2(64, 0)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="DecoLobby/Sign"]
+offset_left = -4480.0
+offset_top = 576.0
+offset_right = -4464.0
+offset_bottom = 832.0
+color = Color(0.67069, 0.67069, 0.67069, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/Sign"]
+offset_left = -4240.0
+offset_top = 576.0
+offset_right = -4224.0
+offset_bottom = 832.0
+color = Color(0.67069, 0.67069, 0.67069, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/Sign"]
+offset_left = -4464.0
+offset_top = 576.0
+offset_right = -4240.0
+offset_bottom = 592.0
+color = Color(0.67069, 0.67069, 0.67069, 1)
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/Sign"]
+offset_left = -4464.0
+offset_top = 760.0
+offset_right = -4240.0
+offset_bottom = 776.0
+color = Color(0.67069, 0.67069, 0.67069, 1)
+
+[node name="Part5" type="ColorRect" parent="DecoLobby/Sign"]
+offset_left = -4464.0
+offset_top = 592.0
+offset_right = -4240.0
+offset_bottom = 760.0
+color = Color(0.728822, 0.728822, 0.728822, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/Sign/Part5"]
+layout_mode = 0
+offset_right = 224.0
+offset_bottom = 168.0
+theme = ExtResource("10_ioyr0")
+text = "Welcome!
+This game is based off of the roblox game titled EToH."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="DifficultyChart" type="Node2D" parent="DecoLobby"]
+position = Vector2(-144, 0)
+
+[node name="Part" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4464.0
+offset_top = 576.0
+offset_right = -4456.0
+offset_bottom = 832.0
+color = Color(0.67069, 0.67069, 0.67069, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4408.0
+offset_top = 576.0
+offset_right = -4400.0
+offset_bottom = 832.0
+color = Color(0.67069, 0.67069, 0.67069, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 800.0
+offset_right = -4408.0
+offset_bottom = 832.0
+color = Color(0, 1, 0, 1)
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 768.0
+offset_right = -4408.0
+offset_bottom = 800.0
+color = Color(1, 1, 0, 1)
+
+[node name="Part5" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 736.0
+offset_right = -4408.0
+offset_bottom = 768.0
+color = Color(1, 0.666667, 0, 1)
+
+[node name="Part6" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 704.0
+offset_right = -4408.0
+offset_bottom = 736.0
+color = Color(1, 0, 0, 1)
+
+[node name="Part7" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 672.0
+offset_right = -4408.0
+offset_bottom = 704.0
+color = Color(0.585847, 1.8049e-06, 4.33177e-07, 1)
+
+[node name="Part8" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 640.0
+offset_right = -4408.0
+offset_bottom = 672.0
+color = Color(0.0923971, 0.0923971, 0.0923971, 1)
+
+[node name="Part9" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 608.0
+offset_right = -4408.0
+offset_bottom = 640.0
+color = Color(1, 0, 1, 1)
+
+[node name="Part11" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 600.0
+offset_right = -4408.0
+offset_bottom = 608.0
+color = Color(0, 0, 1, 1)
+
+[node name="Part12" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 592.0
+offset_right = -4408.0
+offset_bottom = 600.0
+color = Color(0, 0.666667, 1, 1)
+
+[node name="Part13" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 584.0
+offset_right = -4408.0
+offset_bottom = 592.0
+color = Color(0.396078, 1, 0.996078, 1)
+
+[node name="Part14" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 576.0
+offset_right = -4408.0
+offset_bottom = 584.0
+
+[node name="Part15" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 568.0
+offset_right = -4408.0
+offset_bottom = 576.0
+color = Color(0.92227, 0.662226, 0.893301, 1)
+
+[node name="Part16" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 560.0
+offset_right = -4408.0
+offset_bottom = 568.0
+color = Color(0.695006, 0.203437, 0.666987, 1)
+
+[node name="Part17" type="ColorRect" parent="DecoLobby/DifficultyChart"]
+offset_left = -4456.0
+offset_top = 552.0
+offset_right = -4408.0
+offset_bottom = 560.0
+color = Color(0.435192, 0.435192, 0.435192, 1)
+
+[node name="Tree" type="Node2D" parent="DecoLobby"]
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="DecoLobby/Tree"]
+offset_left = -3664.0
+offset_top = 576.0
+offset_right = -3632.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/Tree"]
+offset_left = -3728.0
+offset_top = 656.0
+offset_right = -3568.0
+offset_bottom = 720.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/Tree"]
+offset_left = -3704.0
+offset_top = 600.0
+offset_right = -3592.0
+offset_bottom = 656.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/Tree"]
+offset_left = -3680.0
+offset_top = 560.0
+offset_right = -3616.0
+offset_bottom = 600.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree2" type="Node2D" parent="DecoLobby"]
+position = Vector2(-1136, 0)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="DecoLobby/Tree2"]
+offset_left = -3664.0
+offset_top = 576.0
+offset_right = -3632.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/Tree2"]
+offset_left = -3728.0
+offset_top = 656.0
+offset_right = -3568.0
+offset_bottom = 720.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/Tree2"]
+offset_left = -3704.0
+offset_top = 600.0
+offset_right = -3592.0
+offset_bottom = 656.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/Tree2"]
+offset_left = -3680.0
+offset_top = 560.0
+offset_right = -3616.0
+offset_bottom = 600.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree3" type="Node2D" parent="DecoLobby"]
+position = Vector2(-1432, 0)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="DecoLobby/Tree3"]
+offset_left = -3664.0
+offset_top = 576.0
+offset_right = -3632.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/Tree3"]
+offset_left = -3728.0
+offset_top = 656.0
+offset_right = -3568.0
+offset_bottom = 720.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/Tree3"]
+offset_left = -3704.0
+offset_top = 600.0
+offset_right = -3592.0
+offset_bottom = 656.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/Tree3"]
+offset_left = -3680.0
+offset_top = 560.0
+offset_right = -3616.0
+offset_bottom = 600.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree4" type="Node2D" parent="DecoLobby"]
+position = Vector2(232, 0)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="DecoLobby/Tree4"]
+offset_left = -3664.0
+offset_top = 576.0
+offset_right = -3632.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/Tree4"]
+offset_left = -3728.0
+offset_top = 656.0
+offset_right = -3568.0
+offset_bottom = 720.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/Tree4"]
+offset_left = -3704.0
+offset_top = 600.0
+offset_right = -3592.0
+offset_bottom = 656.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/Tree4"]
+offset_left = -3680.0
+offset_top = 560.0
+offset_right = -3616.0
+offset_bottom = 600.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="TowerPortal" type="Node2D" parent="DecoLobby"]
+position = Vector2(-1312, 512)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4200.0
+offset_top = 192.0
+offset_right = -4104.0
+offset_bottom = 320.0
+color = Color(0.435294, 0.435294, 0.435294, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4104.0
+offset_top = 192.0
+offset_right = -4088.0
+offset_bottom = 320.0
+color = Color(0.858824, 0.509804, 0.654902, 1)
+
+[node name="Part7" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4216.0
+offset_top = 192.0
+offset_right = -4193.0
+offset_bottom = 213.0
+rotation = -0.785397
+color = Color(0.858824, 0.509804, 0.654902, 1)
+
+[node name="Part12" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4101.0
+offset_top = 206.0
+offset_right = -4077.0
+offset_bottom = 225.0
+rotation = -2.35619
+color = Color(0.858824, 0.509804, 0.654902, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4200.0
+offset_top = 176.0
+offset_right = -4104.0
+offset_bottom = 192.0
+color = Color(0.858824, 0.509804, 0.654902, 1)
+
+[node name="TowerName" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4240.0
+offset_top = 112.0
+offset_right = -4064.0
+offset_bottom = 176.0
+color = Color(0.20871, 0.20871, 0.20871, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/TowerName"]
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 64.0
+theme = ExtResource("11_oe1fn")
+text = "Test Tower"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Creator" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4232.0
+offset_top = 80.0
+offset_right = -4072.0
+offset_bottom = 112.0
+color = Color(0.836957, 0.761019, 0.00146972, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/Creator"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("12_8wp5a")
+text = "basilfloof"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Length" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4232.0
+offset_top = 48.0
+offset_right = -4072.0
+offset_bottom = 80.0
+color = Color(0.831776, 0.495182, 0.196319, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/Length"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("12_8wp5a")
+text = "Short"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4216.0
+offset_top = 192.0
+offset_right = -4200.0
+offset_bottom = 320.0
+color = Color(0.858824, 0.509804, 0.654902, 1)
+
+[node name="Portal" type="Area2D" parent="DecoLobby/TowerPortal"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecoLobby/TowerPortal/Portal"]
+position = Vector2(-4152, 256)
+shape = SubResource("RectangleShape2D_cy5ms")
+
+[node name="ToET_Portal" type="Node2D" parent="DecoLobby"]
+position = Vector2(312, 512)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4200.0
+offset_top = 192.0
+offset_right = -4104.0
+offset_bottom = 320.0
+color = Color(0, 1, 0, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4104.0
+offset_top = 192.0
+offset_right = -4088.0
+offset_bottom = 320.0
+color = Color(0.360784, 0.776471, 0.392157, 1)
+
+[node name="Part7" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4216.0
+offset_top = 192.0
+offset_right = -4193.0
+offset_bottom = 213.0
+rotation = -0.785397
+color = Color(0.360784, 0.776471, 0.392157, 1)
+
+[node name="Part12" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4101.0
+offset_top = 206.0
+offset_right = -4077.0
+offset_bottom = 225.0
+rotation = -2.35619
+color = Color(0.360784, 0.776471, 0.392157, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4200.0
+offset_top = 176.0
+offset_right = -4104.0
+offset_bottom = 192.0
+color = Color(0.360784, 0.776471, 0.392157, 1)
+
+[node name="TowerName" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4240.0
+offset_top = 112.0
+offset_right = -4064.0
+offset_bottom = 176.0
+color = Color(0.20871, 0.20871, 0.20871, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/ToET_Portal/TowerName"]
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 64.0
+theme = ExtResource("11_oe1fn")
+text = "Tower of Enjoyable Tutorials"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Creator" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4232.0
+offset_top = 80.0
+offset_right = -4072.0
+offset_bottom = 112.0
+color = Color(0.836957, 0.761019, 0.00146972, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/ToET_Portal/Creator"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("12_8wp5a")
+text = "basilfloof"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Length" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4232.0
+offset_top = 48.0
+offset_right = -4072.0
+offset_bottom = 80.0
+color = Color(0.831776, 0.495182, 0.196319, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/ToET_Portal/Length"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("12_8wp5a")
+text = "Short"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/ToET_Portal"]
+offset_left = -4216.0
+offset_top = 192.0
+offset_right = -4200.0
+offset_bottom = 320.0
+color = Color(0.360784, 0.776471, 0.392157, 1)
+
+[node name="ToETPortal" type="Area2D" parent="DecoLobby/ToET_Portal"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecoLobby/ToET_Portal/ToETPortal"]
+position = Vector2(-4152, 256)
+shape = SubResource("RectangleShape2D_cy5ms")
+
+[node name="TowerSpawns" type="Node2D" parent="."]
+visible = false
+
+[node name="TTSpawn" type="ColorRect" parent="TowerSpawns"]
+offset_left = -17088.0
+offset_top = 960.0
+offset_right = -17024.0
+offset_bottom = 1024.0
+color = Color(1, 0, 0, 0.470588)
+
+[node name="ToETSpawn" type="ColorRect" parent="TowerSpawns"]
+offset_left = -10496.0
+offset_top = -512.0
+offset_right = -10432.0
+offset_bottom = -448.0
+color = Color(1, 0, 0, 0.470588)
+
+[node name="Towers" type="Node2D" parent="."]
+
+[node name="ToET" parent="Towers" instance=ExtResource("15_fyflm")]
+position = Vector2(-10688, -1408)
+
+[node name="TestTower" parent="Towers" instance=ExtResource("15_ijm1c")]
+position = Vector2(-17984, 64)
+
+[node name="Player" parent="." instance=ExtResource("14_n4f0t")]
+position = Vector2(-4032, 768)
+
+[connection signal="body_entered" from="Music/General" to="Music/General" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/General" to="Music/General" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/TTF2" to="Music/TTF2" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/TTF2" to="Music/TTF2" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/TTF3" to="Music/TTF3" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/TTF3" to="Music/TTF3" method="_on_body_exited"]
+[connection signal="body_entered" from="DecoLobby/TowerPortal/Portal" to="." method="_on_portal_body_entered"]
+[connection signal="body_exited" from="DecoLobby/TowerPortal/Portal" to="." method="_on_portal_body_exited"]
+[connection signal="body_entered" from="DecoLobby/ToET_Portal/ToETPortal" to="." method="_on_to_et_portal_body_entered"]
+[connection signal="body_exited" from="DecoLobby/ToET_Portal/ToETPortal" to="." method="_on_to_et_portal_body_exited"]

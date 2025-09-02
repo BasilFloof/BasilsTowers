@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjdtim7oyv2hd"
+path="res://.godot/imported/Terraria Music - Ice 0.mp3-4dcd1d336e9356790b880b1031bb2415.mp3str"
+
+[deps]
+
+source_file="res://Audio/Terraria Music - Ice 0.mp3"
+dest_files=["res://.godot/imported/Terraria Music - Ice 0.mp3-4dcd1d336e9356790b880b1031bb2415.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

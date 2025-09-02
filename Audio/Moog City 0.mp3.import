@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwkj8d0re7d7n"
+path="res://.godot/imported/Moog City 0.mp3-71679702dccc8d4e90741b81f08a7edd.mp3str"
+
+[deps]
+
+source_file="res://Audio/Moog City 0.mp3"
+dest_files=["res://.godot/imported/Moog City 0.mp3-71679702dccc8d4e90741b81f08a7edd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

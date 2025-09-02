@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://blgx1y6uj25pj"
+path="res://.godot/imported/Jump King GotB OST - 04   Bugstalk 0.mp3-3d80577ba6cf189cf790fa15ee85df9d.mp3str"
+
+[deps]
+
+source_file="res://Audio/Jump King GotB OST - 04   Bugstalk 0.mp3"
+dest_files=["res://.godot/imported/Jump King GotB OST - 04   Bugstalk 0.mp3-3d80577ba6cf189cf790fa15ee85df9d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

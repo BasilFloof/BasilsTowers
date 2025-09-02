@@ -1,0 +1,979 @@
+[gd_scene load_steps=11 format=3 uid="uid://crh6j6kyqndfg"]
+
+[ext_resource type="Script" uid="uid://b3v4xqutrf35h" path="res://area_select.gd" id="1_hwbtt"]
+[ext_resource type="Material" uid="uid://ncaben6hs0h5" path="res://EasyParticles.tres" id="2_3qask"]
+[ext_resource type="Texture2D" uid="uid://cq0gbvmrdbixu" path="res://Images/transparent-white-circle-hi.png" id="2_22gj8"]
+[ext_resource type="AudioStream" uid="uid://b0fpttmv4cmw" path="res://Audio/Jump King GotB OST - 07   Dreeg's Theme DJ Gregorius Remix 0.mp3" id="3_4f0en"]
+[ext_resource type="Theme" uid="uid://cat7hux1b40qc" path="res://area_select.tres" id="3_ode3f"]
+[ext_resource type="Material" uid="uid://c0gxd3gycbnwp" path="res://InsaneParticles.tres" id="3_vuv53"]
+[ext_resource type="StyleBox" uid="uid://dst7ujnledg5m" path="res://mainasstyle2.tres" id="4_exg17"]
+[ext_resource type="AudioStream" uid="uid://quldpr465g5f" path="res://Audio/woosh.mp3" id="4_nhawi"]
+[ext_resource type="Material" uid="uid://dsg7r34duyeed" path="res://NilParticles.tres" id="4_vwf5x"]
+[ext_resource type="AudioStream" uid="uid://bwkb13ea5xcg6" path="res://Audio/hurt_c_08-102842.mp3" id="7_xq3hq"]
+
+[node name="AreaSelect" type="Node2D"]
+script = ExtResource("1_hwbtt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -1080.0
+offset_top = -608.0
+offset_right = 3000.0
+offset_bottom = 1432.0
+color = Color(0.254902, 0.682353, 0.835294, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -1080.0
+offset_top = 1432.0
+offset_right = 3000.0
+offset_bottom = 3472.0
+color = Color(0.4176, 0.229655, 0.113884, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 216.0
+offset_top = 1816.0
+offset_right = 864.0
+offset_bottom = 2272.0
+color = Color(0.352126, 0.189827, 0.089736, 1)
+
+[node name="Deco" type="Node2D" parent="."]
+
+[node name="island" type="Node2D" parent="Deco"]
+position = Vector2(840, 16)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Deco/island"]
+offset_left = -960.0
+offset_top = -16.0
+offset_right = -856.0
+offset_bottom = -8.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Deco/island"]
+offset_left = -960.0
+offset_top = -8.0
+offset_right = -856.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Deco/island"]
+offset_left = -944.0
+offset_right = -872.0
+offset_bottom = 8.0
+color = Color(0.577357, 0.32751, 0.174427, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Deco/island"]
+offset_left = -928.0
+offset_top = 8.0
+offset_right = -888.0
+offset_bottom = 16.0
+color = Color(0.551521, 0.311239, 0.163832, 1)
+
+[node name="ToET" type="Node2D" parent="Deco"]
+position = Vector2(624, -112)
+
+[node name="ColorRect" type="ColorRect" parent="Deco/ToET"]
+offset_left = -928.0
+offset_top = -16.0
+offset_right = -880.0
+offset_bottom = -8.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Deco/ToET"]
+offset_left = -928.0
+offset_top = -8.0
+offset_right = -880.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Deco/ToET"]
+offset_left = -920.0
+offset_right = -888.0
+offset_bottom = 8.0
+color = Color(0.577357, 0.32751, 0.174427, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -32.0
+offset_right = -896.0
+offset_bottom = -16.0
+color = Color(0.360784, 0.776471, 0.392157, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -48.0
+offset_right = -896.0
+offset_bottom = -32.0
+color = Color(0.913725, 0.482353, 0.643137, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -64.0
+offset_right = -896.0
+offset_bottom = -48.0
+color = Color(0.85098, 0.756863, 0.176471, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -80.0
+offset_right = -896.0
+offset_bottom = -64.0
+color = Color(0.579991, 0.306982, 0.9273, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -96.0
+offset_right = -896.0
+offset_bottom = -80.0
+color = Color(0.666569, 0.666569, 0.666569, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -112.0
+offset_right = -896.0
+offset_bottom = -96.0
+color = Color(0.489764, 0.763494, 0.986452, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -128.0
+offset_right = -896.0
+offset_bottom = -112.0
+
+[node name="ColorRect12" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -144.0
+offset_right = -896.0
+offset_bottom = -128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -160.0
+offset_right = -896.0
+offset_bottom = -144.0
+
+[node name="ColorRect14" type="ColorRect" parent="Deco/ToET"]
+offset_left = -912.0
+offset_top = -176.0
+offset_right = -896.0
+offset_bottom = -160.0
+color = Color(0.158472, 0.158472, 0.158472, 1)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Deco/ToET"]
+position = Vector2(-904, -16)
+amount = 20
+process_material = ExtResource("2_3qask")
+
+[node name="ToT" type="Node2D" parent="Deco"]
+position = Vector2(1432, 72)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Deco/ToT"]
+offset_left = -928.0
+offset_top = -16.0
+offset_right = -880.0
+offset_bottom = -8.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Deco/ToT"]
+offset_left = -928.0
+offset_top = -8.0
+offset_right = -880.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Deco/ToT"]
+offset_left = -920.0
+offset_right = -888.0
+offset_bottom = 8.0
+color = Color(0.577357, 0.32751, 0.174427, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -32.0
+offset_right = -896.0
+offset_bottom = -16.0
+color = Color(0.506554, 0.318557, 0.210493, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -48.0
+offset_right = -896.0
+offset_bottom = -32.0
+color = Color(0.445823, 0.290846, 0.268653, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -64.0
+offset_right = -896.0
+offset_bottom = -48.0
+color = Color(0.799117, 0.198344, 0.285357, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -80.0
+offset_right = -896.0
+offset_bottom = -64.0
+color = Color(0.304527, 0.477186, 0.3171, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -96.0
+offset_right = -896.0
+offset_bottom = -80.0
+color = Color(0.553494, 0.305175, 0.284231, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -112.0
+offset_right = -896.0
+offset_bottom = -96.0
+color = Color(0.27802, 0.393749, 0.479081, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -128.0
+offset_right = -896.0
+offset_bottom = -112.0
+color = Color(0.435522, 0.294182, 0.406967, 1)
+
+[node name="ColorRect12" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -144.0
+offset_right = -896.0
+offset_bottom = -128.0
+color = Color(0.534335, 0.351685, 0.156823, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -160.0
+offset_right = -896.0
+offset_bottom = -144.0
+color = Color(0.53376, 0.49429, 0.162698, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="Deco/ToT"]
+offset_left = -912.0
+offset_top = -176.0
+offset_right = -896.0
+offset_bottom = -160.0
+color = Color(0.306923, 0.306923, 0.306923, 1)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Deco/ToT"]
+position = Vector2(-904, -16)
+amount = 20
+process_material = ExtResource("3_vuv53")
+
+[node name="Tower" type="Node2D" parent="Deco"]
+position = Vector2(2184, 1024)
+metadata/_edit_group_ = true
+
+[node name="ColorRect5" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -32.0
+offset_right = -896.0
+offset_bottom = -16.0
+
+[node name="ColorRect6" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -48.0
+offset_right = -896.0
+offset_bottom = -32.0
+
+[node name="ColorRect7" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -64.0
+offset_right = -896.0
+offset_bottom = -48.0
+
+[node name="ColorRect8" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -80.0
+offset_right = -896.0
+offset_bottom = -64.0
+
+[node name="ColorRect9" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -96.0
+offset_right = -896.0
+offset_bottom = -80.0
+
+[node name="ColorRect10" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -112.0
+offset_right = -896.0
+offset_bottom = -96.0
+
+[node name="ColorRect11" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -128.0
+offset_right = -896.0
+offset_bottom = -112.0
+
+[node name="ColorRect12" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -144.0
+offset_right = -896.0
+offset_bottom = -128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -160.0
+offset_right = -896.0
+offset_bottom = -144.0
+
+[node name="ColorRect14" type="ColorRect" parent="Deco/Tower"]
+offset_left = -912.0
+offset_top = -176.0
+offset_right = -896.0
+offset_bottom = -160.0
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Deco/Tower"]
+position = Vector2(-904, -16)
+amount = 20
+process_material = ExtResource("2_3qask")
+
+[node name="Tower2" type="Node2D" parent="Deco"]
+position = Vector2(1216, 2288)
+metadata/_edit_group_ = true
+
+[node name="ColorRect5" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -32.0
+offset_right = -896.0
+offset_bottom = -16.0
+
+[node name="ColorRect6" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -48.0
+offset_right = -896.0
+offset_bottom = -32.0
+
+[node name="ColorRect7" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -64.0
+offset_right = -896.0
+offset_bottom = -48.0
+
+[node name="ColorRect8" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -80.0
+offset_right = -896.0
+offset_bottom = -64.0
+
+[node name="ColorRect9" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -96.0
+offset_right = -896.0
+offset_bottom = -80.0
+
+[node name="ColorRect10" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -112.0
+offset_right = -896.0
+offset_bottom = -96.0
+
+[node name="ColorRect11" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -128.0
+offset_right = -896.0
+offset_bottom = -112.0
+
+[node name="ColorRect12" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -144.0
+offset_right = -896.0
+offset_bottom = -128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -160.0
+offset_right = -896.0
+offset_bottom = -144.0
+
+[node name="ColorRect14" type="ColorRect" parent="Deco/Tower2"]
+offset_left = -912.0
+offset_top = -176.0
+offset_right = -896.0
+offset_bottom = -160.0
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Deco/Tower2"]
+position = Vector2(-904, -16)
+amount = 20
+process_material = ExtResource("2_3qask")
+
+[node name="TT" type="Node2D" parent="Deco"]
+position = Vector2(120, 328)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Deco/TT"]
+offset_left = -928.0
+offset_top = -16.0
+offset_right = -880.0
+offset_bottom = -8.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Deco/TT"]
+offset_left = -928.0
+offset_top = -8.0
+offset_right = -880.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Deco/TT"]
+offset_left = -920.0
+offset_right = -888.0
+offset_bottom = 8.0
+color = Color(0.577357, 0.32751, 0.174427, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -32.0
+offset_right = -896.0
+offset_bottom = -16.0
+color = Color(0.858824, 0.509804, 0.654902, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -48.0
+offset_right = -896.0
+offset_bottom = -32.0
+color = Color(0.862745, 0.282353, 0.278431, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -64.0
+offset_right = -896.0
+offset_bottom = -48.0
+color = Color(0.713726, 0.305882, 0.764706, 1)
+
+[node name="ColorRect8" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -80.0
+offset_right = -896.0
+offset_bottom = -64.0
+
+[node name="ColorRect9" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -96.0
+offset_right = -896.0
+offset_bottom = -80.0
+
+[node name="ColorRect10" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -112.0
+offset_right = -896.0
+offset_bottom = -96.0
+
+[node name="ColorRect11" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -128.0
+offset_right = -896.0
+offset_bottom = -112.0
+
+[node name="ColorRect12" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -144.0
+offset_right = -896.0
+offset_bottom = -128.0
+
+[node name="ColorRect13" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -160.0
+offset_right = -896.0
+offset_bottom = -144.0
+
+[node name="ColorRect14" type="ColorRect" parent="Deco/TT"]
+offset_left = -912.0
+offset_top = -176.0
+offset_right = -896.0
+offset_bottom = -160.0
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Deco/TT"]
+position = Vector2(-904, -16)
+amount = 20
+process_material = ExtResource("4_vwf5x")
+
+[node name="land" type="Node2D" parent="Deco"]
+position = Vector2(2592, 1024)
+
+[node name="ColorRect" type="ColorRect" parent="Deco/land"]
+offset_left = -3672.0
+offset_top = -16.0
+offset_right = 408.0
+offset_bottom = -8.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Deco/land"]
+offset_left = -3672.0
+offset_top = -8.0
+offset_right = 408.0
+offset_bottom = 8.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Deco/land"]
+offset_left = -3672.0
+offset_top = 8.0
+offset_right = 408.0
+offset_bottom = 32.0
+color = Color(0.577357, 0.32751, 0.174427, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Deco/land"]
+offset_left = -3672.0
+offset_top = 32.0
+offset_right = 408.0
+offset_bottom = 64.0
+color = Color(0.551521, 0.311239, 0.163832, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Deco/land"]
+offset_left = -3672.0
+offset_top = 64.0
+offset_right = 408.0
+offset_bottom = 112.0
+color = Color(0.520581, 0.291945, 0.151506, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Deco/land"]
+offset_left = -3672.0
+offset_top = 112.0
+offset_right = 408.0
+offset_bottom = 208.0
+color = Color(0.484618, 0.269724, 0.137566, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="Deco/land"]
+offset_left = -3672.0
+offset_top = 208.0
+offset_right = 408.0
+offset_bottom = 408.0
+color = Color(0.459039, 0.254025, 0.127852, 1)
+
+[node name="Cloud" type="Node2D" parent="Deco"]
+position = Vector2(5432, -1680)
+metadata/_edit_group_ = true
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Deco/Cloud"]
+position = Vector2(-5352, 1276)
+scale = Vector2(0.32, 0.174497)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi3" type="Sprite2D" parent="Deco/Cloud"]
+position = Vector2(-5164, 1288)
+scale = Vector2(0.333333, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi4" type="Sprite2D" parent="Deco/Cloud"]
+position = Vector2(-5286, 1280)
+scale = Vector2(0.233333, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi2" type="Sprite2D" parent="Deco/Cloud"]
+position = Vector2(-5264, 1224)
+scale = Vector2(0.32, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Cloud2" type="Node2D" parent="Deco"]
+position = Vector2(4632, -904)
+metadata/_edit_group_ = true
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Deco/Cloud2"]
+position = Vector2(-5384, 1276)
+scale = Vector2(0.213333, 0.174497)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi3" type="Sprite2D" parent="Deco/Cloud2"]
+position = Vector2(-5298, 1248)
+scale = Vector2(0.3, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi4" type="Sprite2D" parent="Deco/Cloud2"]
+position = Vector2(-5233, 1272)
+scale = Vector2(0.27, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi5" type="Sprite2D" parent="Deco/Cloud2"]
+position = Vector2(-5160, 1224)
+scale = Vector2(0.27, 0.241611)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi2" type="Sprite2D" parent="Deco/Cloud2"]
+position = Vector2(-5308, 1308)
+scale = Vector2(0.28, 0.201342)
+texture = ExtResource("2_22gj8")
+
+[node name="Transparent-white-circle-hi6" type="Sprite2D" parent="Deco/Cloud2"]
+position = Vector2(-5114, 1290)
+scale = Vector2(0.22, 0.154362)
+texture = ExtResource("2_22gj8")
+
+[node name="Tree7" type="Node2D" parent="Deco"]
+position = Vector2(3568, -832)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree7"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree7"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree7"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree7"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree8" type="Node2D" parent="Deco"]
+position = Vector2(3624, -832)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree8"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree8"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree8"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree8"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree" type="Node2D" parent="Deco"]
+position = Vector2(4880, 176)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree2" type="Node2D" parent="Deco"]
+position = Vector2(4832, 176)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree2"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree2"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree2"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree2"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree3" type="Node2D" parent="Deco"]
+position = Vector2(4736, 176)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree3"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree3"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree3"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree3"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree4" type="Node2D" parent="Deco"]
+position = Vector2(4560, 176)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree4"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree4"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree4"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree4"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree5" type="Node2D" parent="Deco"]
+position = Vector2(4592, 176)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree5"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree5"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree5"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree5"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="Tree6" type="Node2D" parent="Deco"]
+position = Vector2(4464, 176)
+metadata/_edit_group_ = true
+
+[node name="Part" type="ColorRect" parent="Deco/Tree6"]
+offset_left = -3664.0
+offset_top = 808.0
+offset_right = -3656.0
+offset_bottom = 832.0
+color = Color(0.496581, 0.293318, 0.179861, 1)
+
+[node name="Part2" type="ColorRect" parent="Deco/Tree6"]
+offset_left = -3672.0
+offset_top = 813.0
+offset_right = -3648.0
+offset_bottom = 821.0
+color = Color(0.186749, 0.426988, 0.289099, 1)
+
+[node name="Part3" type="ColorRect" parent="Deco/Tree6"]
+offset_left = -3670.0
+offset_top = 807.0
+offset_right = -3650.0
+offset_bottom = 813.0
+color = Color(0.200029, 0.452667, 0.307596, 1)
+
+[node name="Part4" type="ColorRect" parent="Deco/Tree6"]
+offset_left = -3666.0
+offset_top = 803.0
+offset_right = -3654.0
+offset_bottom = 807.0
+color = Color(0.213506, 0.478526, 0.326264, 1)
+
+[node name="MainCam" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="MainCam"]
+visible = false
+
+[node name="Left" type="Polygon2D" parent="MainCam/CanvasLayer"]
+position = Vector2(1472, 832)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-8, 8, -8, 120, -64, 64)
+
+[node name="Polygon2D" type="Polygon2D" parent="MainCam/CanvasLayer/Left"]
+color = Color(0.211023, 0.216653, 0.484705, 1)
+polygon = PackedVector2Array(-16, 24, -16, 64, -16, 104, -56, 64)
+
+[node name="Play" type="Panel" parent="MainCam/CanvasLayer"]
+offset_left = 1472.0
+offset_top = 832.0
+offset_right = 1728.0
+offset_bottom = 960.0
+theme = ExtResource("3_ode3f")
+
+[node name="Label" type="Label" parent="MainCam/CanvasLayer/Play"]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 128.0
+theme = ExtResource("3_ode3f")
+text = "Play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Right" type="Polygon2D" parent="MainCam/CanvasLayer"]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(1736, 840, 1736, 952, 1792, 896)
+
+[node name="Polygon2D" type="Polygon2D" parent="MainCam/CanvasLayer/Right"]
+color = Color(0.211765, 0.215686, 0.486275, 1)
+polygon = PackedVector2Array(1784, 896, 1744, 856, 1744, 936)
+
+[node name="AreaName" type="Panel" parent="MainCam/CanvasLayer"]
+offset_right = 456.0
+offset_bottom = 200.0
+theme = ExtResource("3_ode3f")
+theme_override_styles/panel = ExtResource("4_exg17")
+
+[node name="Label" type="Label" parent="MainCam/CanvasLayer/AreaName"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 448.0
+offset_bottom = 192.0
+theme = ExtResource("3_ode3f")
+text = "Region"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftButton" type="Button" parent="MainCam/CanvasLayer"]
+offset_left = 1408.0
+offset_top = 840.0
+offset_right = 1464.0
+offset_bottom = 952.0
+theme = ExtResource("3_ode3f")
+
+[node name="RightButton" type="Button" parent="MainCam/CanvasLayer"]
+offset_left = 1736.0
+offset_top = 840.0
+offset_right = 1792.0
+offset_bottom = 952.0
+theme = ExtResource("3_ode3f")
+
+[node name="PlayButton" type="Button" parent="MainCam/CanvasLayer"]
+offset_left = 1472.0
+offset_top = 832.0
+offset_right = 1728.0
+offset_bottom = 960.0
+theme = ExtResource("3_ode3f")
+
+[node name="BGMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_4f0en")
+autoplay = true
+
+[node name="Woosh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_nhawi")
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="1" type="Node2D" parent="Markers"]
+
+[node name="2" type="Node2D" parent="Markers"]
+position = Vector2(1920, 656)
+
+[node name="3" type="Node2D" parent="Markers"]
+position = Vector2(560, 2104)
+
+[node name="No" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_xq3hq")
+
+[node name="Text" type="Node2D" parent="."]
+
+[node name="R1Name" type="Label" parent="Text"]
+offset_left = -2240.0
+offset_top = 576.0
+offset_right = -2112.0
+offset_bottom = 608.0
+text = "Region 1: Sky"
+
+[node name="R2Name" type="Label" parent="Text"]
+offset_left = -2240.0
+offset_top = 608.0
+offset_right = -2112.0
+offset_bottom = 640.0
+text = "Region 2: ???"
+
+[node name="R3Name" type="Label" parent="Text"]
+offset_left = -2240.0
+offset_top = 640.0
+offset_right = -2112.0
+offset_bottom = 672.0
+text = "Region 3: ???"
+
+[connection signal="pressed" from="MainCam/CanvasLayer/LeftButton" to="." method="_on_left_button_pressed"]
+[connection signal="pressed" from="MainCam/CanvasLayer/RightButton" to="." method="_on_right_button_pressed"]
+[connection signal="pressed" from="MainCam/CanvasLayer/PlayButton" to="." method="_on_play_button_pressed"]

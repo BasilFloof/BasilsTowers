@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cilbc7le2ffqq"
+path="res://.godot/imported/Hollow Knight OST - Greenpath 0.mp3-eb06a23888adbbad755ee6a8b7b0682a.mp3str"
+
+[deps]
+
+source_file="res://Audio/Hollow Knight OST - Greenpath 0.mp3"
+dest_files=["res://.godot/imported/Hollow Knight OST - Greenpath 0.mp3-eb06a23888adbbad755ee6a8b7b0682a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
