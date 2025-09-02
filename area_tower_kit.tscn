@@ -1,0 +1,709 @@
+[gd_scene load_steps=54 format=3 uid="uid://bmnyymg0axiet"]
+
+[ext_resource type="Script" uid="uid://e3ys2gbhglqi" path="res://f1.gd" id="1_414lm"]
+[ext_resource type="AudioStream" uid="uid://6j1caujpa6r1" path="res://Audio/Hollow Knight OST - Crystal Peak 0.mp3" id="2_414lm"]
+[ext_resource type="Script" uid="uid://dlc6hu02yvk7o" path="res://f2.gd" id="3_4gsj6"]
+[ext_resource type="AudioStream" uid="uid://dl7wpluwlsxe5" path="res://Audio/Jump King GotB OST - 08   Antumbra.mp3" id="4_mw27n"]
+[ext_resource type="Script" uid="uid://32wucr7dobuq" path="res://f3.gd" id="5_7t4vx"]
+[ext_resource type="AudioStream" uid="uid://bwrpt75ajcpnr" path="res://Audio/Terraria Music - Corruption 0.mp3" id="6_4gsj6"]
+[ext_resource type="PackedScene" uid="uid://dg0v8j8vrcf1b" path="res://player.tscn" id="7_se6uy"]
+[ext_resource type="Script" uid="uid://dsl1qydvsm72i" path="res://f4.gd" id="7_tef8s"]
+[ext_resource type="Texture2D" uid="uid://cq0gbvmrdbixu" path="res://Images/transparent-white-circle-hi.png" id="8_kt27a"]
+[ext_resource type="AudioStream" uid="uid://cbpkmcfifsug1" path="res://Audio/Terraria - Hallow 0.mp3" id="8_se6uy"]
+[ext_resource type="PackedScene" uid="uid://dcqgmv1r58w2r" path="res://kb.tscn" id="9_jtbdf"]
+[ext_resource type="Script" uid="uid://o35mp5y4jqge" path="res://f5.gd" id="9_kt27a"]
+[ext_resource type="PackedScene" uid="uid://qnaqgqwbsvd5" path="res://bounce_pad.tscn" id="10_7t4vx"]
+[ext_resource type="AudioStream" uid="uid://ba5xbfqbcpult" path="res://Audio/Wii Shop Channel (Remix) 0.mp3" id="10_jtbdf"]
+[ext_resource type="Theme" uid="uid://b2ogxvl6im1iq" path="res://TowerNameTheme.tres" id="10_sjvp6"]
+[ext_resource type="Theme" uid="uid://ca4vhinf1v258" path="res://IndicatorTheme.tres" id="11_7t4vx"]
+[ext_resource type="Script" uid="uid://dqyk0knvbdhhm" path="res://f6.gd" id="11_a846a"]
+[ext_resource type="AudioStream" uid="uid://bjdtim7oyv2hd" path="res://Audio/Terraria Music - Ice 0.mp3" id="12_a846a"]
+[ext_resource type="AudioStream" uid="uid://cfo2isbujhsu3" path="res://Audio/Terraria Journey's End OST_ Thunderstorm 0.mp3" id="13_f1bs6"]
+[ext_resource type="Script" uid="uid://bfu7g4jmdj6r" path="res://f7.gd" id="13_uqgir"]
+[ext_resource type="AudioStream" uid="uid://c0cv6204p7o4l" path="res://Audio/Pigstep (Stereo Mix) 0.mp3" id="14_uqgir"]
+[ext_resource type="AudioStream" uid="uid://dxcoelb1pr1x8" path="res://Audio/Jump King GotB OST - 01   Philosopher's Forest 0.mp3" id="15_h37wn"]
+[ext_resource type="Script" uid="uid://6di84wb3fxuj" path="res://f8.gd" id="15_uqgir"]
+[ext_resource type="AudioStream" uid="uid://cj3u2f6kp6no3" path="res://Audio/Hollow Knight OST - City of Tears 0.mp3" id="16_h430i"]
+[ext_resource type="Script" uid="uid://dq123q6q2873s" path="res://f9.gd" id="17_h37wn"]
+[ext_resource type="Script" uid="uid://c34w6ufeyfluv" path="res://f10.gd" id="19_h430i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38et7"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b7ax5"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sxacm"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jtbdf"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qqyrn"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8wek0"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqf1s"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a846a"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f1bs6"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uqgir"]
+size = Vector2(1792, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ptq8"]
+size = Vector2(128, 64)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lowby"]
+radius = 31.9062
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbhdq"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gojnm"]
+size = Vector2(1792, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1c2mv"]
+size = Vector2(64, 960)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7g2b"]
+size = Vector2(64, 960)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58smv"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a25ih"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rmf6y"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mebjf"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mexmb"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d6kku"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h430i"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_71oom"]
+size = Vector2(64, 1024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tef8s"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lowby"]
+size = Vector2(2432, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_se6uy"]
+size = Vector2(96, 128)
+
+[node name="AreaTowerKit" type="Node2D"]
+
+[node name="Music" type="Node2D" parent="."]
+
+[node name="F1" type="Area2D" parent="Music"]
+script = ExtResource("1_414lm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F1"]
+position = Vector2(960, 512)
+shape = SubResource("RectangleShape2D_38et7")
+
+[node name="F1Music" type="AudioStreamPlayer" parent="Music/F1"]
+stream = ExtResource("2_414lm")
+
+[node name="F2" type="Area2D" parent="Music"]
+script = ExtResource("3_4gsj6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F2"]
+position = Vector2(960, -512)
+shape = SubResource("RectangleShape2D_b7ax5")
+
+[node name="F2Music" type="AudioStreamPlayer" parent="Music/F2"]
+stream = ExtResource("4_mw27n")
+
+[node name="F3" type="Area2D" parent="Music"]
+script = ExtResource("5_7t4vx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F3"]
+position = Vector2(960, -1536)
+shape = SubResource("RectangleShape2D_sxacm")
+
+[node name="F3Music" type="AudioStreamPlayer" parent="Music/F3"]
+stream = ExtResource("6_4gsj6")
+
+[node name="F4" type="Area2D" parent="Music"]
+script = ExtResource("7_tef8s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F4"]
+position = Vector2(960, -2560)
+shape = SubResource("RectangleShape2D_jtbdf")
+
+[node name="F4Music" type="AudioStreamPlayer" parent="Music/F4"]
+stream = ExtResource("8_se6uy")
+
+[node name="F5" type="Area2D" parent="Music"]
+script = ExtResource("9_kt27a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F5"]
+position = Vector2(960, -3584)
+shape = SubResource("RectangleShape2D_qqyrn")
+
+[node name="F5Music" type="AudioStreamPlayer" parent="Music/F5"]
+stream = ExtResource("10_jtbdf")
+
+[node name="F6" type="Area2D" parent="Music"]
+script = ExtResource("11_a846a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F6"]
+position = Vector2(960, -4608)
+shape = SubResource("RectangleShape2D_8wek0")
+
+[node name="F6Music" type="AudioStreamPlayer" parent="Music/F6"]
+stream = ExtResource("12_a846a")
+
+[node name="F7" type="Area2D" parent="Music"]
+script = ExtResource("13_uqgir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F7"]
+position = Vector2(960, -5632)
+shape = SubResource("RectangleShape2D_hqf1s")
+
+[node name="F7Music" type="AudioStreamPlayer" parent="Music/F7"]
+stream = ExtResource("13_f1bs6")
+
+[node name="F8" type="Area2D" parent="Music"]
+script = ExtResource("15_uqgir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F8"]
+position = Vector2(960, -6656)
+shape = SubResource("RectangleShape2D_a846a")
+
+[node name="F8Music" type="AudioStreamPlayer" parent="Music/F8"]
+stream = ExtResource("14_uqgir")
+
+[node name="F9" type="Area2D" parent="Music"]
+script = ExtResource("17_h37wn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F9"]
+position = Vector2(960, -7680)
+shape = SubResource("RectangleShape2D_f1bs6")
+
+[node name="F9Music" type="AudioStreamPlayer" parent="Music/F9"]
+stream = ExtResource("15_h37wn")
+
+[node name="F10" type="Area2D" parent="Music"]
+script = ExtResource("19_h430i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Music/F10"]
+position = Vector2(960, -8704)
+shape = SubResource("RectangleShape2D_uqgir")
+
+[node name="F10Music" type="AudioStreamPlayer" parent="Music/F10"]
+stream = ExtResource("16_h430i")
+
+[node name="Backgrounds" type="Node2D" parent="."]
+
+[node name="BG" type="ColorRect" parent="Backgrounds"]
+offset_left = -8248.0
+offset_top = -12304.0
+offset_right = 10608.0
+offset_bottom = 5192.0
+color = Color(0.253542, 0.681314, 0.834811, 1)
+
+[node name="F1BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_right = 1856.0
+offset_bottom = 1024.0
+color = Color(0.796243, 0.796243, 0.796243, 1)
+
+[node name="F2BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -1024.0
+offset_right = 1856.0
+color = Color(0.691357, 0.691357, 0.691357, 1)
+
+[node name="F3BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -2048.0
+offset_right = 1856.0
+offset_bottom = -1024.0
+color = Color(0.533333, 0.533333, 0.533333, 1)
+
+[node name="F4BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -3072.0
+offset_right = 1856.0
+offset_bottom = -2048.0
+color = Color(0.458824, 0.458824, 0.458824, 1)
+
+[node name="F5BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -4096.0
+offset_right = 1856.0
+offset_bottom = -3072.0
+color = Color(0.415686, 0.415686, 0.415686, 1)
+
+[node name="F6BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -5120.0
+offset_right = 1856.0
+offset_bottom = -4096.0
+color = Color(0.385492, 0.385493, 0.385492, 1)
+
+[node name="F7BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -6144.0
+offset_right = 1856.0
+offset_bottom = -5120.0
+color = Color(0.340339, 0.340339, 0.340339, 1)
+
+[node name="F8BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -7168.0
+offset_right = 1856.0
+offset_bottom = -6144.0
+color = Color(0.306923, 0.306923, 0.306923, 1)
+
+[node name="F9BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -8192.0
+offset_right = 1856.0
+offset_bottom = -7168.0
+color = Color(0.262933, 0.262932, 0.262932, 1)
+
+[node name="F10BG" type="ColorRect" parent="Backgrounds"]
+offset_left = 64.0
+offset_top = -9216.0
+offset_right = 1856.0
+offset_bottom = -8192.0
+color = Color(0.223103, 0.223103, 0.223103, 1)
+
+[node name="Player" parent="." instance=ExtResource("7_se6uy")]
+position = Vector2(928, 896)
+
+[node name="Level" type="Node2D" parent="."]
+
+[node name="Block" type="StaticBody2D" parent="Level"]
+position = Vector2(-448, 160)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Block"]
+position = Vector2(320, 832)
+shape = SubResource("RectangleShape2D_4ptq8")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Block"]
+offset_left = 256.0
+offset_top = 800.0
+offset_right = 384.0
+offset_bottom = 864.0
+color = Color(0.870588, 0.870588, 0.870588, 1)
+
+[node name="Circle" type="StaticBody2D" parent="Level"]
+position = Vector2(-936, 512)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Circle"]
+position = Vector2(776, 416)
+rotation = 0.523599
+shape = SubResource("CircleShape2D_lowby")
+
+[node name="Transparent-white-circle-hi" type="Sprite2D" parent="Level/Circle"]
+modulate = Color(0.870588, 0.870588, 0.870588, 1)
+position = Vector2(776, 416)
+scale = Vector2(0.106667, 0.107382)
+texture = ExtResource("8_kt27a")
+
+[node name="KB" parent="Level" instance=ExtResource("9_jtbdf")]
+position = Vector2(152, 904)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/KB"]
+position = Vector2(-248, 48)
+shape = SubResource("RectangleShape2D_gbhdq")
+
+[node name="ColorRect" type="ColorRect" parent="Level/KB"]
+offset_left = -280.0
+offset_top = 40.0
+offset_right = -216.0
+offset_bottom = 56.0
+color = Color(0.678944, 0.678944, 0.678944, 1)
+
+[node name="Frame" type="Node2D" parent="Level"]
+
+[node name="1f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, 432)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/1f"]
+position = Vector2(960, 560)
+shape = SubResource("RectangleShape2D_gojnm")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/1f"]
+offset_left = 64.0
+offset_top = 528.0
+offset_right = 1856.0
+offset_bottom = 592.0
+color = Color(0.868985, 0.868985, 0.868985, 1)
+
+[node name="1f2" type="StaticBody2D" parent="Level/Frame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/1f2"]
+position = Vector2(96, 480)
+shape = SubResource("RectangleShape2D_1c2mv")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/1f2"]
+offset_left = 64.0
+offset_right = 128.0
+offset_bottom = 960.0
+color = Color(0.868985, 0.868985, 0.868985, 1)
+
+[node name="1f3" type="StaticBody2D" parent="Level/Frame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/1f3"]
+position = Vector2(1824, 480)
+shape = SubResource("RectangleShape2D_f7g2b")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/1f3"]
+offset_left = 1792.0
+offset_right = 1856.0
+offset_bottom = 960.0
+color = Color(0.868985, 0.868985, 0.868985, 1)
+
+[node name="2f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/2f"]
+position = Vector2(96, -392)
+shape = SubResource("RectangleShape2D_58smv")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/2f"]
+offset_left = 64.0
+offset_top = -904.0
+offset_right = 128.0
+offset_bottom = 120.0
+color = Color(0.741384, 0.741385, 0.741385, 1)
+
+[node name="2f2" type="StaticBody2D" parent="Level/Frame"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/2f2"]
+position = Vector2(1824, -512)
+shape = SubResource("RectangleShape2D_a25ih")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/2f2"]
+offset_left = 1792.0
+offset_top = -1024.0
+offset_right = 1856.0
+color = Color(0.741384, 0.741385, 0.741385, 1)
+
+[node name="3f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/3f"]
+position = Vector2(96, -1416)
+shape = SubResource("RectangleShape2D_rmf6y")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/3f"]
+offset_left = 64.0
+offset_top = -1928.0
+offset_right = 128.0
+offset_bottom = -904.0
+color = Color(0.597176, 0.597176, 0.597176, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="3f2" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/3f2"]
+position = Vector2(1824, -1416)
+shape = SubResource("RectangleShape2D_mebjf")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/3f2"]
+offset_left = 1792.0
+offset_top = -1928.0
+offset_right = 1856.0
+offset_bottom = -904.0
+color = Color(0.597176, 0.597176, 0.597176, 1)
+
+[node name="4f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -1144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/4f"]
+position = Vector2(96, -1416)
+shape = SubResource("RectangleShape2D_mexmb")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/4f"]
+offset_left = 64.0
+offset_top = -1928.0
+offset_right = 128.0
+offset_bottom = -904.0
+color = Color(0.517184, 0.517184, 0.517184, 1)
+
+[node name="4f2" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -1144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/4f2"]
+position = Vector2(1824, -1416)
+shape = SubResource("RectangleShape2D_d6kku")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/4f2"]
+offset_left = 1792.0
+offset_top = -1928.0
+offset_right = 1856.0
+offset_bottom = -904.0
+color = Color(0.517184, 0.517184, 0.517184, 1)
+
+[node name="5f" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -2168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/5f"]
+position = Vector2(96, -1416)
+shape = SubResource("RectangleShape2D_h430i")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/5f"]
+offset_left = 64.0
+offset_top = -1928.0
+offset_right = 128.0
+offset_bottom = -904.0
+color = Color(0.458405, 0.458405, 0.458405, 1)
+
+[node name="5f2" type="StaticBody2D" parent="Level/Frame"]
+position = Vector2(0, -2168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Frame/5f2"]
+position = Vector2(1824, -1416)
+shape = SubResource("RectangleShape2D_71oom")
+
+[node name="ColorRect" type="ColorRect" parent="Level/Frame/5f2"]
+offset_left = 1792.0
+offset_top = -1928.0
+offset_right = 1856.0
+offset_bottom = -904.0
+color = Color(0.458405, 0.458405, 0.458405, 1)
+
+[node name="BouncePad" parent="Level" instance=ExtResource("10_7t4vx")]
+position = Vector2(-80, 840)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/BouncePad"]
+position = Vector2(-16, 80)
+shape = SubResource("RectangleShape2D_tef8s")
+
+[node name="ColorRect" type="ColorRect" parent="Level/BouncePad"]
+offset_left = -48.0
+offset_top = 72.0
+offset_right = 16.0
+offset_bottom = 88.0
+color = Color(0.870588, 0.870588, 0.870588, 1)
+
+[node name="DecoLobby" type="Node2D" parent="."]
+
+[node name="Island" type="StaticBody2D" parent="DecoLobby"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecoLobby/Island"]
+position = Vector2(960, 1052)
+shape = SubResource("RectangleShape2D_lowby")
+
+[node name="ColorRect" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = -256.0
+offset_top = 1024.0
+offset_right = 2176.0
+offset_bottom = 1048.0
+color = Color(0.31218, 0.642283, 0.350235, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = -256.0
+offset_top = 1048.0
+offset_right = 2176.0
+offset_bottom = 1112.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = -128.0
+offset_top = 1112.0
+offset_right = 2048.0
+offset_bottom = 1200.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = 64.0
+offset_top = 1200.0
+offset_right = 1856.0
+offset_bottom = 1304.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="DecoLobby/Island"]
+offset_left = 448.0
+offset_top = 1304.0
+offset_right = 1472.0
+offset_bottom = 1384.0
+color = Color(0.59804, 0.340667, 0.183153, 1)
+
+[node name="TowerPortal" type="Node2D" parent="DecoLobby"]
+position = Vector2(4024, 480)
+
+[node name="Part" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4200.0
+offset_top = 192.0
+offset_right = -4104.0
+offset_bottom = 320.0
+color = Color(0, 1, 0, 1)
+
+[node name="Part2" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4104.0
+offset_top = 192.0
+offset_right = -4088.0
+offset_bottom = 320.0
+color = Color(0.870588, 0.870588, 0.870588, 1)
+
+[node name="Part7" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4216.0
+offset_top = 192.0
+offset_right = -4193.0
+offset_bottom = 213.0
+rotation = -0.785397
+color = Color(0.870588, 0.870588, 0.870588, 1)
+
+[node name="Part12" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4101.0
+offset_top = 206.0
+offset_right = -4077.0
+offset_bottom = 225.0
+rotation = -2.35619
+color = Color(0.870588, 0.870588, 0.870588, 1)
+
+[node name="Part3" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4200.0
+offset_top = 176.0
+offset_right = -4104.0
+offset_bottom = 192.0
+color = Color(0.870588, 0.870588, 0.870588, 1)
+
+[node name="TowerName" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4240.0
+offset_top = 112.0
+offset_right = -4064.0
+offset_bottom = 176.0
+color = Color(0.20871, 0.20871, 0.20871, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/TowerName"]
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 64.0
+theme = ExtResource("10_sjvp6")
+text = "Tower of Example Tower"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Creator" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4232.0
+offset_top = 80.0
+offset_right = -4072.0
+offset_bottom = 112.0
+color = Color(0.836957, 0.761019, 0.00146972, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/Creator"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("11_7t4vx")
+text = "Creator"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Warning" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4232.0
+offset_top = 48.0
+offset_right = -4072.0
+offset_bottom = 80.0
+color = Color(0.977452, 0.293648, 0.266578, 1)
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/Warning"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("11_7t4vx")
+text = "Warning"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Length" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4232.0
+offset_top = 16.0
+offset_right = -4072.0
+offset_bottom = 48.0
+color = Color(0.831776, 0.495182, 0.196319, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/Length"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("11_7t4vx")
+text = "Length"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Technique" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4232.0
+offset_top = -16.0
+offset_right = -4072.0
+offset_bottom = 16.0
+color = Color(0.817521, 0.817521, 0.817521, 1)
+
+[node name="Label" type="Label" parent="DecoLobby/TowerPortal/Technique"]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 32.0
+theme = ExtResource("11_7t4vx")
+text = "Technique"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Part4" type="ColorRect" parent="DecoLobby/TowerPortal"]
+offset_left = -4216.0
+offset_top = 192.0
+offset_right = -4200.0
+offset_bottom = 320.0
+color = Color(0.870588, 0.870588, 0.870588, 1)
+
+[node name="Area2D" type="Area2D" parent="DecoLobby/TowerPortal"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DecoLobby/TowerPortal/Area2D"]
+position = Vector2(-4152, 256)
+shape = SubResource("RectangleShape2D_se6uy")
+
+[connection signal="body_entered" from="Music/F1" to="Music/F1" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F1" to="Music/F1" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F2" to="Music/F2" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F2" to="Music/F2" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F3" to="Music/F3" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F3" to="Music/F3" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F4" to="Music/F4" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F4" to="Music/F4" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F5" to="Music/F5" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F5" to="Music/F5" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F6" to="Music/F6" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F6" to="Music/F6" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F7" to="Music/F7" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F7" to="Music/F7" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F8" to="Music/F8" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F8" to="Music/F8" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F9" to="Music/F9" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F9" to="Music/F9" method="_on_body_exited"]
+[connection signal="body_entered" from="Music/F10" to="Music/F10" method="_on_body_entered"]
+[connection signal="body_exited" from="Music/F10" to="Music/F10" method="_on_body_exited"]

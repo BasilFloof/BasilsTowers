@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://81mxm5yyvmt3"
+path="res://.godot/imported/Jump King OST - 07   Masse 0.mp3-75cacba8647f25106c044a071769448b.mp3str"
+
+[deps]
+
+source_file="res://Audio/Jump King OST - 07   Masse 0.mp3"
+dest_files=["res://.godot/imported/Jump King OST - 07   Masse 0.mp3-75cacba8647f25106c044a071769448b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

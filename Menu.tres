@@ -1,0 +1,16 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://gt7favadcjg3"]
+
+[ext_resource type="StyleBox" uid="uid://xlk5w2ef0e2h" path="res://MenuBox.tres" id="1_ymob4"]
+[ext_resource type="StyleBox" uid="uid://ddt4xb3n1nbma" path="res://MenuBox2.tres" id="2_td6wd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_td6wd"]
+
+[resource]
+Button/font_sizes/font_size = 30
+Button/styles/focus = SubResource("StyleBoxEmpty_td6wd")
+Button/styles/hover = ExtResource("2_td6wd")
+Button/styles/normal = ExtResource("2_td6wd")
+Button/styles/pressed = ExtResource("2_td6wd")
+Label/font_sizes/font_size = 50
+Label/styles/normal = ExtResource("2_td6wd")
+Panel/styles/panel = ExtResource("1_ymob4")

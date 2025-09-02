@@ -1,0 +1,11 @@
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://dsg7r34duyeed"]
+
+[resource]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(20, 1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+gravity = Vector3(0, -98, 0)
+scale_max = 2.65
+color = Color(0.717917, 0.702195, 0.720522, 1)

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://glqvnxs30fgr"]
+
+[ext_resource type="Script" uid="uid://c67ltve5cmv8f" path="res://lighting_changer.gd" id="1_hx6yv"]
+
+[node name="LightingChanger" type="Area2D"]
+script = ExtResource("1_hx6yv")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color(0.581033, 0.581033, 0.581033, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

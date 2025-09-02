@@ -1,0 +1,22 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cat7hux1b40qc"]
+
+[ext_resource type="StyleBox" uid="uid://clmagma2tbrkp" path="res://mainasstyle.tres" id="1_awp5g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_awp5g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_05jr4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7e5hu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ohptv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f51vl"]
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxEmpty_awp5g")
+Button/styles/focus = SubResource("StyleBoxEmpty_05jr4")
+Button/styles/hover = SubResource("StyleBoxEmpty_7e5hu")
+Button/styles/normal = SubResource("StyleBoxEmpty_ohptv")
+Button/styles/pressed = SubResource("StyleBoxEmpty_f51vl")
+Label/font_sizes/font_size = 50
+Panel/styles/panel = ExtResource("1_awp5g")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cj3u2f6kp6no3"
+path="res://.godot/imported/Hollow Knight OST - City of Tears 0.mp3-9532443897251131d8b6217256a8839e.mp3str"
+
+[deps]
+
+source_file="res://Audio/Hollow Knight OST - City of Tears 0.mp3"
+dest_files=["res://.godot/imported/Hollow Knight OST - City of Tears 0.mp3-9532443897251131d8b6217256a8839e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

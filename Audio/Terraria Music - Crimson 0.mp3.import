@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7rna1n0vguct"
+path="res://.godot/imported/Terraria Music - Crimson 0.mp3-834a79c392474669f2060699095714ac.mp3str"
+
+[deps]
+
+source_file="res://Audio/Terraria Music - Crimson 0.mp3"
+dest_files=["res://.godot/imported/Terraria Music - Crimson 0.mp3-834a79c392474669f2060699095714ac.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

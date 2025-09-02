@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnq5jp0or4cis"
+path="res://.godot/imported/Terraria Music - Moon Lord 0.mp3-8fbc94ac0cb670d16a7014437a982c95.mp3str"
+
+[deps]
+
+source_file="res://Audio/Terraria Music - Moon Lord 0.mp3"
+dest_files=["res://.godot/imported/Terraria Music - Moon Lord 0.mp3-8fbc94ac0cb670d16a7014437a982c95.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

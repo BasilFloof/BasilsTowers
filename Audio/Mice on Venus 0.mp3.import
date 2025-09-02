@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://qf3wg6hmler8"
+path="res://.godot/imported/Mice on Venus 0.mp3-480564146699a1fc8a36ab188ee20282.mp3str"
+
+[deps]
+
+source_file="res://Audio/Mice on Venus 0.mp3"
+dest_files=["res://.godot/imported/Mice on Venus 0.mp3-480564146699a1fc8a36ab188ee20282.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
